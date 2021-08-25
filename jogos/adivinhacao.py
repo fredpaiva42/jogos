@@ -4,19 +4,31 @@ print("-----------------------------------")
 print()
 
 numeroSecreto = 42
+totalDeTentativas = 3
+rodada = 1
 
-chute = int(input("Digite o seu número: "))
+while rodada <= totalDeTentativas:
+    print("Tentativa {} de {}".format(rodada, totalDeTentativas))
 
-print("Você digitou", chute)
+    chute = int(input("Digite o seu número: "))
+    print("Você digitou", chute)
+    print()
 
-acertou = chute == numeroSecreto
-foiMaior = chute > numeroSecreto
-foiMenor = chute < numeroSecreto
+    acertou = chute == numeroSecreto
+    foiMaior = chute > numeroSecreto
+    foiMenor = chute < numeroSecreto
 
-if acertou:
-    print("você acertou!")
-else:
-    if foiMaior:
-        print("Você errou! O seu chute foi maior do que o número secreto.")
-    elif foiMenor:
-        print("Você errou! O seu chute foi menor do que um número secreto")
+    if acertou:
+        print("você acertou!")
+        print()
+    else:
+        if foiMaior:
+            print("Você errou! O seu chute foi maior do que o número secreto.")
+            print()
+        elif foiMenor:
+            print("Você errou! O seu chute foi menor do que um número secreto")
+            print()
+
+    rodada += 1
+
+print("Fim de Jogo!")
