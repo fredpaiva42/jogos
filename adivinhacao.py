@@ -7,8 +7,21 @@ print()
 
 # poderia usar o randrange também random.randrange(1,101)
 numeroSecreto = random.randint(1, 101)
-totalDeTentativas = 3
+totalDeTentativas = 0
 rodada = 1
+
+print("Níveis de dificuldade:")
+print("(1) Fácil \n(2) Médio \n(3) Difícil")
+print()
+
+nivel = int(input("Qual o nível de dificuldade você deseja? "))
+
+if nivel == 1:
+    totalDeTentativas = 20
+elif nivel == 2:
+    totalDeTentativas = 10
+else:
+    totalDeTentativas = 5
 
 while rodada <= totalDeTentativas:
     print("Tentativa {} de {}".format(rodada, totalDeTentativas))
@@ -42,4 +55,5 @@ while rodada <= totalDeTentativas:
     rodada += 1
 
 print("Fim de Jogo!")
-print(numeroSecreto)
+print()
+print("O número secreto era: {}".format(numeroSecreto))
