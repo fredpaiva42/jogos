@@ -8,6 +8,7 @@ print()
 # poderia usar o randrange também random.randrange(1,101)
 numeroSecreto = random.randint(1, 101)
 totalDeTentativas = 0
+pontos = 1000
 rodada = 1
 
 print("Níveis de dificuldade:")
@@ -41,7 +42,7 @@ while rodada <= totalDeTentativas:
     foiMenor = chute < numeroSecreto
 
     if acertou:
-        print("você acertou!")
+        print("você acertou e fez {} pontos!".format(pontos))
         print()
         break
     else:
@@ -51,6 +52,8 @@ while rodada <= totalDeTentativas:
         elif foiMenor:
             print("Você errou! O seu chute foi menor do que um número secreto")
             print()
+        pontosperdidos = abs(numeroSecreto - chute)
+        pontos = pontos - pontosperdidos
 
     rodada += 1
 
