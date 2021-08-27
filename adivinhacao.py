@@ -1,9 +1,12 @@
+import random
+
 print("-----------------------------------")
 print("Bem vindo ao jogo de adivinhação!")
 print("-----------------------------------")
 print()
 
-numeroSecreto = 42
+# poderia usar o randrange também random.randrange(1,101)
+numeroSecreto = random.randint(1, 101)
 totalDeTentativas = 3
 rodada = 1
 
@@ -39,3 +42,4 @@ while rodada <= totalDeTentativas:
     rodada += 1
 
 print("Fim de Jogo!")
+print(numeroSecreto)
