@@ -1,6 +1,13 @@
-print("-----------------------------------")
-print("Bem vindo ao jogo de adivinhação!")
-print("-----------------------------------")
-print()
 
-print("Fim de Jogo!")
+
+def jogar():
+    print("-----------------------------------")
+    print("Bem vindo ao jogo da Forca!")
+    print("-----------------------------------")
+    print()
+
+    print("Fim de Jogo!")
+
+
+if __name__ == "__main__":
+    jogar()
