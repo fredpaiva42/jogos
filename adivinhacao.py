@@ -42,21 +42,26 @@ while rodada <= totalDeTentativas:
     foiMenor = chute < numeroSecreto
 
     if acertou:
-        print("você acertou e fez {} pontos!".format(pontos))
+        print("Você acertou e fez {} pontos!".format(pontos))
         print()
         break
     else:
         if foiMaior:
             print("Você errou! O seu chute foi maior do que o número secreto.")
             print()
+            if rodada == totalDeTentativas:
+                print("O número secreto era {}. Você fez {} pontos!".format(
+                    numeroSecreto, pontos))
         elif foiMenor:
-            print("Você errou! O seu chute foi menor do que um número secreto")
+            print("Você errou! O seu chute foi menor do que o número secreto")
             print()
+            if rodada == totalDeTentativas:
+                print("O número secreto era {}. Você fez {} pontos!".format(
+                    numeroSecreto, pontos))
+
         pontosperdidos = abs(numeroSecreto - chute)
         pontos = pontos - pontosperdidos
 
     rodada += 1
 
 print("Fim de Jogo!")
-print()
-print("O número secreto era: {}".format(numeroSecreto))
