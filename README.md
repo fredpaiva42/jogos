@@ -2,10 +2,10 @@
 
 ## Funções Built-in:
 
-**→ print( ):  esta é a função utilizada para a impressão de uma mensagem ou dado, basta passar a mensagem ou variável como parâmetro para a função.** 
+**→ print( ): esta é a função utilizada para a impressão de uma mensagem ou dado, basta passar a mensagem ou variável como parâmetro para a função.**
 
 - Dentro da função print temos dois parâmetros que podem ser usados: o **sep** e o **end.**
-- **Sep="":**  com o sep podemos adicionar separadores entre as mensagens como uma vírgula, uma barra e um traço.
+- **Sep="":** com o sep podemos adicionar separadores entre as mensagens como uma vírgula, uma barra e um traço.
 - **End="":** com o end podemos definir o que terá após uma mensagem, pode ser um ponto de exclamação, interrogação, \n pra pula de linha, um espaço em branco...
 
 **→ type( ): esta função nos permite identificar qual o tipo da variável, basta apenas passarmos a variável como parâmetro que ela irá nos retornar seu tipo.**
@@ -28,13 +28,13 @@ Com a estrutura condicional podemos fazer comparações de valores e a partir de
 
 - **if():** pode ser usado com parenteses ou sem, essa estrutura condicional representa o **SE**.
 - **==:** o igual em python é representado com dois iguais, pois um igual apenas quer dizer atribuição.
-- **else:** é uma estrutura em oposição ao if, essa estrutura representa o **SENÃO.**  ****
+- **else:** é uma estrutura em oposição ao if, essa estrutura representa o **SENÃO.** \*\*\*\*
 
 ```python
 if (condição):
-	# executa código caso a condição seja verdadeira
+ # executa código caso a condição seja verdadeira
 else:
-	# executa código caso a condição seja falsa.
+ # executa código caso a condição seja falsa.
 ```
 
 ## Diferenças entre Python 2 e Python 3
