@@ -20,7 +20,7 @@ No python nos possuimos uma tipagem dinâmica ou seja não é necessário que de
 
 **obs (python):** uma variável só passa a existir assim que atribuímos um valor a ela, se não atribuirmos nenhum valor ela não é considerada como variável inicializada.
 
-**obs2:** em algumas linguagens as variáveis existem mesmo se não inicializadas com valor, nas linguagens como C, Java e C#, nesse caso é chamada de variável estática, nela só passamos o tipo e nome da variável e ela já passa a existir.
+**obs2:** em algumas linguagens as variáveis existem mesmo se não inicializadas com valor, nas linguagens como **C, Java e C#**, nesse caso é chamada de **variável estática**, nela só passamos o tipo e nome da variável e ela já passa a existir.
 
 ## Estrutura Condicional:
 
@@ -28,7 +28,7 @@ Com a estrutura condicional podemos fazer comparações de valores e a partir de
 
 - **if():** pode ser usado com parenteses ou sem, essa estrutura condicional representa o **SE**.
 - **==:** o igual em python é representado com dois iguais, pois um igual apenas quer dizer atribuição.
-- **else:** é uma estrutura em oposição ao if, essa estrutura representa o **SENÃO.** \*\*\*\*
+- **else:** é uma estrutura em oposição ao if, essa estrutura representa o **SENÃO.**
 
 ```python
 if (condição):
